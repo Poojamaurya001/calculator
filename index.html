@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator function</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="background">
+<div class="toggle">
+    <div class="button">
+        <div class="circle"></div>
+    </div>
+</div>
+
+    <div class="container">
+        <CENTER><h1>CALCULATOR</h1></CENTER><br>
+        <input type="text" class="result" id ="result">
+        <div class="box">
+            <button onclick="insertVal('7')">7</button>
+            <button onclick="insertVal('8')">8</button>
+            <button onclick="insertVal('9')">9</button>
+            <button class="operator" onclick="insertVal('+')"><i class="fa-sharp fa-solid fa-plus"></i></button>
+            <button onclick="insertVal('4')">4</button>
+            <button onclick="insertVal('5')">5</button>
+            <button onclick="insertVal('6')">6</button>
+            <button class="operator"onclick="insertVal('-')"><i class="fa-solid fa-minus"></i></button>
+            <button onclick="insertVal('1')">1</button>
+            <button onclick="insertVal('2')">2</button>
+            <button onclick="insertVal('3')">3</button>
+            <button class="operator" onclick="insertVal('*')"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+            <button class="operator" onclick="insertVal('=')"><i class="fa-solid fa-equals"></i></button>
+            <button onclick="insertVal('0')">0</button>
+            <button class="operator" onclick="insertVal('%')"><i class="fa-solid fa-percent"></i></button>
+            <button class="operator" onclick="insertVal('.')">.</button>
+            </div>
+            <div class="box1">
+            <button onclick="calculate()"class="enter">Enter</button>
+            <button onclick="clearVal()" class="delete"> <i class="fa-solid fa-delete-left"></i></button>
+            </div>
+    </div>
+    
+    <script src="clac.js"></script>
+</body>
+</html>

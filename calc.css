@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.background{
+    height: 100vh;
+    width:100vw;
+    margin-bottom:40px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background:url("https://images.freecreatives.com/wp-content/uploads/2016/04/Beautiful-Plain-Website-Background.jpg");
+    color:aliceblue;
+    font-style:normal;
+}
+.container{
+    height:85vh;
+    width: 30vw;
+    background-color: transparent;
+    margin-top: 20vh;
+    margin-left: 60vh;
+    position: relative;
+    border-radius: 25px;
+}
+.box{
+    position: absolute;
+    height:60vh;
+    width:30vw;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    border-radius: 25px;
+}
+button{
+    margin-left: 8px;
+    margin-top: 8px;
+    height: 80px;
+    width: 80px;
+    font-size:35px;
+    background-color: rgb(246, 242, 242);
+    color: rgb(4, 4, 4);
+    border:none;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.result{
+    width:30vw;
+    height:10vh;
+    background-color:rgba(245, 241, 241, 0.947);;
+    background-size: cover;
+    font-size:30px ;
+    color:rgb(3, 3, 3);
+    border-radius:25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+button:active{
+    border: 3px solid black;
+    transform: scale(0.7);
+    filter: drop-shadow(5px 5px 25px white);
+}
+.delete{
+    height: 80px;
+    width: 180px;
+    color:rgb(229, 6, 6);
+    font-size: 35px;
+    margin-left:40px;
+}
+.enter{
+    height: 80px;
+    width: 180px;
+    color:rgb(8, 229, 19);
+    font-size: 35px;
+}
+.box1{
+    margin-top:60vh;
+    position: absolute;
+    height:12vh;
+    width:30vw;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:auto;
+    border-radius: 25px;
+    opacity: none;
+}
+.operator{
+    border-radius: 50%;
+    color: rgb(255, 204, 0);
+    font-size:35px;
+    
+}
+@media (max-width:600px) {
+    .container{
+    height:40vh;
+    width: 15vw;
+    background-color: transparent;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    position: relative;
+    border-radius: 10px;
+    
+}
+.result{
+    width:65vw;
+}
+
+}
